@@ -16,3 +16,8 @@ this website displays the following stimuli:
 3. A wheel-like pattern that is motionless (i.e. has constant angular speed of 0° s<sup>-1</sup>).
 
 for an experiment on dizziness
+
+## resources
+
+- image for the stimulus - https://www.svgrepo.com/svg/77939/wheel
+- favicon generator - https://favicon.io/
