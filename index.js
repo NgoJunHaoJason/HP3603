@@ -35,10 +35,10 @@ async function displayStimulus1() {
     const stimulus = createStimulus('stimulus1');
 
     let animationString = '';
-    for (let index = 0; index < 29; ++index) {
+    for (let index = 0; index < 30; ++index) {
         animationString += ('spin1-' + index + ' 1s linear ' + index + 's, ');
     }
-    animationString += 'spin1-29 1s linear 29s'
+    animationString += 'spin1-30 1s linear 30s'
     stimulus.style.animation = animationString;
 
     const stimulusContainer = document.getElementById('stimulus-container');
