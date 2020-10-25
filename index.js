@@ -37,7 +37,7 @@ async function displayStimulus1() {
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus)
     
-    await sleep(3000);
+    await sleep(30000);
     return stimulus.id;
 }
 
@@ -48,7 +48,7 @@ async function displayStimulus2() {
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus)
     
-    await sleep(3000);
+    await sleep(30000);
     return stimulus.id;
 }
 
@@ -59,7 +59,7 @@ async function displayStimulus3() {
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus);
 
-    await sleep(3000);
+    await sleep(30000);
     return stimulus.id;
 }
 
