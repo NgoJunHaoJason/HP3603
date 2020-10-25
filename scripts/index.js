@@ -75,7 +75,7 @@ function createStimulus(id) {
 
     stimulus.className = 'stimulus';
     stimulus.id = id;
-    stimulus.src = 'wheel.svg';
+    stimulus.src = 'assets/wheel.svg';
 
     return stimulus;
 }
