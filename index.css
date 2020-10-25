@@ -13,27 +13,14 @@
     margin: auto;
 }
 
-#stimulus1 {
-    animation-name: spin1;
-    animation-duration: 30s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-}
-
-@keyframes spin1 {
-    100% {
-        transform: rotate(21600deg);
-    }
-}
-
 #stimulus2 {
-    animation-name: spin2;
+    animation-name: spin-constant;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 30;
 }
 
-@keyframes spin2 {
+@keyframes spin-constant {
     100% {
         transform: rotate(360deg);
     }
