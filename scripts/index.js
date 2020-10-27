@@ -21,6 +21,20 @@ function onClickStimulus3() {
         .then(() => toggleAllButtons());
 }
 
+function onClickStimulus4() {
+    toggleAllButtons()
+        .then(() => displayStimulus4())
+        .then((id) => hideStimulus(id))
+        .then(() => toggleAllButtons());
+}
+
+function onClickStimulus5() {
+    toggleAllButtons()
+        .then(() => displayStimulus5())
+        .then((id) => hideStimulus(id))
+        .then(() => toggleAllButtons());
+}
+
 async function toggleAllButtons() {
     console.log('toggling buttons...');
     const buttons = document.getElementsByTagName('button');
@@ -38,11 +52,11 @@ async function displayStimulus1() {
     for (let index = 0; index < 30; ++index) {
         animationString += ('spin1-' + index + ' 1s linear ' + index + 's, ');
     }
-    animationString += 'spin1-30 1s linear 30s'
+    animationString += 'spin1-30 1s linear 30s';
     stimulus.style.animation = animationString;
 
     const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus)
+    stimulusContainer.appendChild(stimulus);
     
     await sleep(30000);
     return stimulus.id;
@@ -70,12 +84,44 @@ async function displayStimulus3() {
     return stimulus.id;
 }
 
+async function displayStimulus4() {
+    console.log('displaying stimulus 4...');
+    const stimulus = createStimulus('stimulus4');
+
+    const stimulusContainer = document.getElementById('stimulus-container');
+    stimulusContainer.appendChild(stimulus)
+    
+    await sleep(30000);
+    return stimulus.id;
+}
+
+async function displayStimulus5() {
+    console.log('displaying stimulus 5...');
+    const stimulus = createStimulus('stimulus5');
+
+    stimulus.addEventListener('animationend', () => {
+        const intervalNum = +stimulus.className.substring(17);
+        stimulus.className = 'stimulus interval' + (intervalNum + 1)
+    })
+
+    const stimulusContainer = document.getElementById('stimulus-container');
+    stimulusContainer.appendChild(stimulus);
+
+    stimulus.className += ' interval1';
+    
+    await sleep(30000);
+    return stimulus.id;
+}
+
 function createStimulus(id) {
     const stimulus = document.createElement('img');
 
     stimulus.className = 'stimulus';
     stimulus.id = id;
-    stimulus.src = 'assets/wheel.svg';
+    if (id === 'stimulus4' || id === 'stimulus5')
+        stimulus.src = 'assets/stimulus.svg';
+    else
+        stimulus.src = 'assets/wheel.svg';
 
     return stimulus;
 }
