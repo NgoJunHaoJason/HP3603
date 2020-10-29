@@ -2,31 +2,11 @@
     text-align: center;
 }
 
-#stimulus-container {
-    height: 70vh;
-}
-
-.stimulus {
-    width: 400px;
-    height: 400px;
-    display: block;
-    margin: auto;
-}
-
-#stimulus2, #stimulus4 {
-    animation-name: spin-constant;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 30;
-}
-
-@keyframes spin-constant {
-    100% {
-        transform: rotate(720deg);
-    }
-}
-
 #button-container {
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
+}
+
+button {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
