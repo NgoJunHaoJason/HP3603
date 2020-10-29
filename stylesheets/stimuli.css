@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-#stimulus2, #stimulus4 {
+#stimulus2 {
     animation-name: spin-constant;
     animation-duration: 1s;
     animation-timing-function: linear;
