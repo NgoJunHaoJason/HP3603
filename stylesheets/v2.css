@@ -1,214 +1,214 @@
-@keyframes spin5 {
+@keyframes spin-accelerate {
     100% {
         transform: rotate(360deg);
     }
 }
 
-#stimulus5.interval1 {
-    animation-name: spin5;
+#stimulus1.interval1 {
+    animation-name: spin-accelerate;
     animation-duration: 1000ms;
     animation-timing-function: linear;
     animation-delay: 0ms;
 }
 
-#stimulus5.interval2 {
-    animation-name: spin5;
+#stimulus1.interval2 {
+    animation-name: spin-accelerate;
     animation-duration: 970ms;
     animation-timing-function: linear;
     animation-delay: 1000ms;
 }
 
-#stimulus5.interval3 {
-    animation-name: spin5;
+#stimulus1.interval3 {
+    animation-name: spin-accelerate;
     animation-duration: 940ms;
     animation-timing-function: linear;
     animation-delay: 1970ms;
 }
 
-#stimulus5.interval4 {
-    animation-name: spin5;
+#stimulus1.interval4 {
+    animation-name: spin-accelerate;
     animation-duration: 910ms;
     animation-timing-function: linear;
     animation-delay: 2910ms;
 }
 
-#stimulus5.interval5 {
-    animation-name: spin5;
+#stimulus1.interval5 {
+    animation-name: spin-accelerate;
     animation-duration: 880ms;
     animation-timing-function: linear;
     animation-delay: 3820ms;
 }
 
-#stimulus5.interval6 {
-    animation-name: spin5;
+#stimulus1.interval6 {
+    animation-name: spin-accelerate;
     animation-duration: 850ms;
     animation-timing-function: linear;
     animation-delay: 4700ms;
 }
 
-#stimulus5.interval7 {
-    animation-name: spin5;
+#stimulus1.interval7 {
+    animation-name: spin-accelerate;
     animation-duration: 820ms;
     animation-timing-function: linear;
     animation-delay: 5550ms;
 }
 
-#stimulus5.interval8 {
-    animation-name: spin5;
+#stimulus1.interval8 {
+    animation-name: spin-accelerate;
     animation-duration: 790ms;
     animation-timing-function: linear;
     animation-delay: 6370ms;
 }
 
-#stimulus5.interval9 {
-    animation-name: spin5;
+#stimulus1.interval9 {
+    animation-name: spin-accelerate;
     animation-duration: 760ms;
     animation-timing-function: linear;
     animation-delay: 7160ms;
 }
 
-#stimulus5.interval10 {
-    animation-name: spin5;
+#stimulus1.interval10 {
+    animation-name: spin-accelerate;
     animation-duration: 730ms;
     animation-timing-function: linear;
     animation-delay: 7920ms;
 }
 
-#stimulus5.interval11 {
-    animation-name: spin5;
+#stimulus1.interval11 {
+    animation-name: spin-accelerate;
     animation-duration: 700ms;
     animation-timing-function: linear;
     animation-delay: 8650ms;
 }
 
-#stimulus5.interval12 {
-    animation-name: spin5;
+#stimulus1.interval12 {
+    animation-name: spin-accelerate;
     animation-duration: 670ms;
     animation-timing-function: linear;
     animation-delay: 9350ms;
 }
 
-#stimulus5.interval13 {
-    animation-name: spin5;
+#stimulus1.interval13 {
+    animation-name: spin-accelerate;
     animation-duration: 640ms;
     animation-timing-function: linear;
     animation-delay: 10020ms;
 }
 
-#stimulus5.interval14 {
-    animation-name: spin5;
+#stimulus1.interval14 {
+    animation-name: spin-accelerate;
     animation-duration: 610ms;
     animation-timing-function: linear;
     animation-delay: 10660ms;
 }
 
-#stimulus5.interval15 {
-    animation-name: spin5;
+#stimulus1.interval15 {
+    animation-name: spin-accelerate;
     animation-duration: 580ms;
     animation-timing-function: linear;
     animation-delay: 11270ms;
 }
 
-#stimulus5.interval16 {
-    animation-name: spin5;
+#stimulus1.interval16 {
+    animation-name: spin-accelerate;
     animation-duration: 550ms;
     animation-timing-function: linear;
     animation-delay: 11850ms;
 }
 
-#stimulus5.interval17 {
-    animation-name: spin5;
+#stimulus1.interval17 {
+    animation-name: spin-accelerate;
     animation-duration: 520ms;
     animation-timing-function: linear;
     animation-delay: 12400ms;
 }
 
-#stimulus5.interval18 {
-    animation-name: spin5;
+#stimulus1.interval18 {
+    animation-name: spin-accelerate;
     animation-duration: 490ms;
     animation-timing-function: linear;
     animation-delay: 12920ms;
 }
 
-#stimulus5.interval19 {
-    animation-name: spin5;
+#stimulus1.interval19 {
+    animation-name: spin-accelerate;
     animation-duration: 460ms;
     animation-timing-function: linear;
     animation-delay: 13410ms;
 }
 
-#stimulus5.interval20 {
-    animation-name: spin5;
+#stimulus1.interval20 {
+    animation-name: spin-accelerate;
     animation-duration: 430ms;
     animation-timing-function: linear;
     animation-delay: 13870ms;
 }
 
-#stimulus5.interval21 {
-    animation-name: spin5;
+#stimulus1.interval21 {
+    animation-name: spin-accelerate;
     animation-duration: 400ms;
     animation-timing-function: linear;
     animation-delay: 14300ms;
 }
 
-#stimulus5.interval22 {
-    animation-name: spin5;
+#stimulus1.interval22 {
+    animation-name: spin-accelerate;
     animation-duration: 370ms;
     animation-timing-function: linear;
     animation-delay: 14700ms;
 }
 
-#stimulus5.interval23 {
-    animation-name: spin5;
+#stimulus1.interval23 {
+    animation-name: spin-accelerate;
     animation-duration: 340ms;
     animation-timing-function: linear;
     animation-delay: 15070ms;
 }
 
-#stimulus5.interval24 {
-    animation-name: spin5;
+#stimulus1.interval24 {
+    animation-name: spin-accelerate;
     animation-duration: 310ms;
     animation-timing-function: linear;
     animation-delay: 15410ms;
 }
 
-#stimulus5.interval25 {
-    animation-name: spin5;
+#stimulus1.interval25 {
+    animation-name: spin-accelerate;
     animation-duration: 280ms;
     animation-timing-function: linear;
     animation-delay: 15720ms;
 }
 
-#stimulus5.interval26 {
-    animation-name: spin5;
+#stimulus1.interval26 {
+    animation-name: spin-accelerate;
     animation-duration: 250ms;
     animation-timing-function: linear;
     animation-delay: 16000ms;
 }
 
-#stimulus5.interval27 {
-    animation-name: spin5;
+#stimulus1.interval27 {
+    animation-name: spin-accelerate;
     animation-duration: 220ms;
     animation-timing-function: linear;
     animation-delay: 16250ms;
 }
 
-#stimulus5.interval28 {
-    animation-name: spin5;
+#stimulus1.interval28 {
+    animation-name: spin-accelerate;
     animation-duration: 190ms;
     animation-timing-function: linear;
     animation-delay: 16470ms;
 }
 
-#stimulus5.interval29 {
-    animation-name: spin5;
+#stimulus1.interval29 {
+    animation-name: spin-accelerate;
     animation-duration: 160ms;
     animation-timing-function: linear;
     animation-delay: 16660ms;
 }
 
-#stimulus5.interval30 {
-    animation-name: spin5;
+#stimulus1.interval30 {
+    animation-name: spin-accelerate;
     animation-duration: 130ms;
     animation-timing-function: linear;
     animation-delay: 16820ms;
