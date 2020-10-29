@@ -46,15 +46,15 @@ async function displayStimulus1() {
 
     let animationString = '';
     for (let index = 0; index < 30; ++index) {
-        animationString += ('spin1-' + index + ' 1s linear ' + index + 's, ');
+        animationString += ('spin-accelerate-' + index + ' 2s linear ' + 2 * index + 's, ');
     }
-    animationString += 'spin1-30 1s linear 30s';
+    animationString += 'spin-accelerate-30 2s linear 60s';
     stimulus.style.animation = animationString;
 
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus);
     
-    await sleep(30000);
+    await sleep(60000); // 1 min
     return stimulus.id;
 }
 
@@ -65,7 +65,7 @@ async function displayStimulus2() {
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus)
     
-    await sleep(30000);
+    await sleep(60000); // 1 min
     return stimulus.id;
 }
 
@@ -76,7 +76,7 @@ async function displayStimulus3() {
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus);
 
-    await sleep(30000);
+    await sleep(60000); // 1 min
     return stimulus.id;
 }
 
