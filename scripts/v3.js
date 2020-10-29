@@ -1,38 +1,34 @@
 console.log('loaded index script...');
 
-function onClickStimulus1() {
+// document.getElementById('button1').onclick = () => onClickButton1();
+// document.getElementById('button2').onclick = () => onClickButton2();
+// document.getElementById('button3').onclick = () => onClickButton3();
+document.getElementById('back').onclick = () => onClickBackButton();
+
+function onClickButton1() {
     toggleAllButtons()
         .then(() => displayStimulus1())
         .then((id) => hideStimulus(id))
         .then(() => toggleAllButtons());
 }
 
-function onClickStimulus2() {
+function onClickButton2() {
     toggleAllButtons()
         .then(() => displayStimulus2())
         .then((id) => hideStimulus(id))
         .then(() => toggleAllButtons());
 }
 
-function onClickStimulus3() {
+function onClickButton3() {
     toggleAllButtons()
         .then(() => displayStimulus3())
         .then((id) => hideStimulus(id))
         .then(() => toggleAllButtons());
 }
 
-function onClickStimulus4() {
-    toggleAllButtons()
-        .then(() => displayStimulus4())
-        .then((id) => hideStimulus(id))
-        .then(() => toggleAllButtons());
-}
-
-function onClickStimulus5() {
-    toggleAllButtons()
-        .then(() => displayStimulus5())
-        .then((id) => hideStimulus(id))
-        .then(() => toggleAllButtons());
+function onClickBackButton() {
+    const url = location.href.slice(0, -15) + 'index.html';
+    location.href = url;
 }
 
 async function toggleAllButtons() {
