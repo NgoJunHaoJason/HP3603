@@ -18,33 +18,29 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">
+        
     <link rel="stylesheet" href="../stylesheets/stimuli.css">
-    <link rel="stylesheet" href="../stylesheets/stimulus1.css">
-    <link rel="stylesheet" href="../stylesheets/stimulus5.css">
-
-    <script src="../scripts/v1.js"></script>
+    <link rel="stylesheet" href="../stylesheets/v1.css">
 </head>
 
 <body>
-    <h1 id="title">HP3603</h1>
+    <div id="button-container">
+        <button type="button" class="btn btn-primary" id="button1">
+            Stimulus 1
+        </button>
+        <button type="button" class="btn btn-primary" id="button2">
+            Stimulus 2
+        </button>
+        <button type="button" class="btn btn-primary" id="button3">
+            Stimulus 3
+        </button>
+    </div>
     <br>
     <div id="stimulus-container"></div>
     <br>
-    <div id="button-container">
-        <button type="button" class="btn btn-secondary" onclick="onClickStimulus1()">
-            Stimulus 1
-        </button>
-        <button type="button" class="btn btn-secondary" onclick="onClickStimulus2()">
-            Stimulus 2
-        </button>
-        <button type="button" class="btn btn-secondary" onclick="onClickStimulus3()">
-            Stimulus 3
-        </button>
-        <button type="button" class="btn btn-secondary" onclick="onClickStimulus4()">
-            Stimulus 4
-        </button>
-        <button type="button" class="btn btn-secondary" onclick="onClickStimulus5()">
-            Stimulus 5
+    <div id="back-container">
+        <button type="button" class="btn btn-secondary" id="back">
+            back
         </button>
     </div>
 
@@ -58,6 +54,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script src="../scripts/v1.js"></script>
 </body>
 
 </html>

@@ -7,9 +7,5 @@ for (let index = 0; index < buttons.length; ++index)
 
 function onClickRedirectButton(button) {
     const url = location.href.slice(0, -10) + 'stimuli/' + button.id + '.html';
-    redirect(url);
-}
-
-function redirect(url) {
     location.href = url;
 }

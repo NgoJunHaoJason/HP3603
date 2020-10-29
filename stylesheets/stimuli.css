@@ -1,9 +1,11 @@
-#title {
-    text-align: center;
+#button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
 #stimulus-container {
-    height: 70vh;
+    height: 400px;
 }
 
 .stimulus {
@@ -26,7 +28,7 @@
     }
 }
 
-#button-container {
-    display: flex;
-    justify-content: space-evenly;
+#back-container {
+    text-align: center;
+    margin: 20px;
 }
