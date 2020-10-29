@@ -46,7 +46,8 @@ async function displayStimulus1() {
 
     let animationString = '';
     for (let index = 0; index < 30; ++index) {
-        animationString += ('spin-accelerate-' + index + ' 2s linear ' + 2 * index + 's, ');
+        const delay = 2 * index;
+        animationString += ('spin-accelerate-' + index + ' 2s linear ' + delay + 's, ');
     }
     animationString += 'spin-accelerate-30 2s linear 60s';
     stimulus.style.animation = animationString;

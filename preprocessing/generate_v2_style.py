@@ -68,7 +68,7 @@ def generate_v2_style(
             duration -= duration_decay
 
         last_interval_style = (
-            '\n'
+            f'\n'
             f'#stimulus1.interval{num_intervals} {{\n'
             f'    animation-name: spin-accelerate;\n'
             f'    animation-duration: {duration}ms;\n'
