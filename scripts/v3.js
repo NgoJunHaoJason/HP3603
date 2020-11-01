@@ -161,5 +161,5 @@ async function hideStimulus(id) {
     if (stimulus.tagName === 'IMG')
         stimulus.parentNode.removeChild(stimulus);
     else
-        stimlus.style.display = 'none';
+        stimulus.style.display = 'none';
 }
