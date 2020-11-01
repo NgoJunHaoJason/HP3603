@@ -1,13 +1,25 @@
 #title {
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
+}
+
+#subtitle {
+    text-align: center;
 }
 
 #button-container {
     text-align: center;
 }
 
+#heading {
+    margin-top: 25vh;
+}
+
 button {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#v3 {
+    margin-top: 25vh;
 }
