@@ -1,4 +1,32 @@
-console.log('loaded index script...');
+console.log('loaded v3 script...');
+
+const stimulusContainer = document.getElementById('stimulus-container');
+
+let stimulus = document.createElement('video');
+
+stimulus.className = 'stimulus';
+stimulus.id = 'stimulus1';
+stimulus.style.display = 'none';
+
+videoSource = document.createElement('source');
+videoSource.src = '../assets/v3_stimulus1.ogg';
+videoSource.type = 'video/ogg';
+
+stimulus.appendChild(videoSource);
+stimulusContainer.appendChild(stimulus);
+
+stimulus = document.createElement('video');
+
+stimulus.className = 'stimulus';
+stimulus.id = 'stimulus2';
+stimulus.style.display = 'none';
+
+videoSource = document.createElement('source');
+videoSource.src = '../assets/v3_stimulus2.ogg';
+videoSource.type = 'video/ogg';
+
+stimulus.appendChild(videoSource);
+stimulusContainer.appendChild(stimulus);
 
 document.getElementById('button1').onclick = () => onClickButton1();
 document.getElementById('button2').onclick = () => onClickButton2();
@@ -42,12 +70,15 @@ async function toggleAllButtons() {
 
 async function displayStimulus1() {
     console.log('displaying stimulus 1...');
-    const stimulus = createMovingStimulus('stimulus1');
+    // const stimulus = createMovingStimulus('stimulus1');
 
-    const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus);
+    // const stimulusContainer = document.getElementById('stimulus-container');
+    // stimulusContainer.appendChild(stimulus);
 
-    stimulus.load()
+    // stimulus.load()
+    const stimulus = document.getElementById('stimulus1');
+    stimulus.style.display = 'block';
+    stimulus.play();
     
     await sleep(60000);
     return stimulus.id;
@@ -55,12 +86,15 @@ async function displayStimulus1() {
 
 async function displayStimulus2() {
     console.log('displaying stimulus 2...');
-    const stimulus = createMovingStimulus('stimulus2');
+    // const stimulus = createMovingStimulus('stimulus2');
 
-    const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus);
+    // const stimulusContainer = document.getElementById('stimulus-container');
+    // stimulusContainer.appendChild(stimulus);
 
-    stimulus.load()
+    // stimulus.load()
+    const stimulus = document.getElementById('stimulus2');
+    stimulus.style.display = 'block';
+    stimulus.play();
     
     await sleep(60000);
     return stimulus.id;
@@ -83,7 +117,6 @@ function createMovingStimulus(id) {
     stimulus.className = 'stimulus';
     stimulus.id = id;
 
-    stimulus.autoplay = true;
     const videoSource = document.createElement('source');
 
     switch (id) {
@@ -122,5 +155,9 @@ async function sleep(duration) {
 async function hideStimulus(id) {
     console.log('hiding stimulus...');
     const stimulus = document.getElementById(id);
-    stimulus.parentNode.removeChild(stimulus);
+
+    if (stimulus.tagName === 'IMG')
+        stimulus.parentNode.removeChild(stimulus);
+    else
+        stimlus.style.display = 'none';
 }
