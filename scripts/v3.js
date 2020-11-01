@@ -28,6 +28,8 @@ videoSource.type = 'video/ogg';
 stimulus.appendChild(videoSource);
 stimulusContainer.appendChild(stimulus);
 
+console.log('videos ready');
+
 document.getElementById('button1').onclick = () => onClickButton1();
 document.getElementById('button2').onclick = () => onClickButton2();
 document.getElementById('button3').onclick = () => onClickButton3();
