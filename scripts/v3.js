@@ -1,8 +1,8 @@
 console.log('loaded index script...');
 
-// document.getElementById('button1').onclick = () => onClickButton1();
-// document.getElementById('button2').onclick = () => onClickButton2();
-// document.getElementById('button3').onclick = () => onClickButton3();
+document.getElementById('button1').onclick = () => onClickButton1();
+document.getElementById('button2').onclick = () => onClickButton2();
+document.getElementById('button3').onclick = () => onClickButton3();
 document.getElementById('back').onclick = () => onClickBackButton();
 
 function onClickButton1() {
@@ -42,82 +42,75 @@ async function toggleAllButtons() {
 
 async function displayStimulus1() {
     console.log('displaying stimulus 1...');
-    const stimulus = createStimulus('stimulus1');
-
-    let animationString = '';
-    for (let index = 0; index < 30; ++index) {
-        animationString += ('spin1-' + index + ' 1s linear ' + index + 's, ');
-    }
-    animationString += 'spin1-30 1s linear 30s';
-    stimulus.style.animation = animationString;
+    const stimulus = createMovingStimulus('stimulus1');
 
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus);
+
+    stimulus.load()
     
-    await sleep(30000);
+    await sleep(60000);
     return stimulus.id;
 }
 
 async function displayStimulus2() {
     console.log('displaying stimulus 2...');
-    const stimulus = createStimulus('stimulus2');
+    const stimulus = createMovingStimulus('stimulus2');
 
     const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus)
+    stimulusContainer.appendChild(stimulus);
+
+    stimulus.load()
     
-    await sleep(30000);
+    await sleep(60000);
     return stimulus.id;
 }
 
 async function displayStimulus3() {
     console.log('displaying stimulus 3...');
-    const stimulus = createStimulus('stimulus3');
+    const stimulus = createStaticStimulus('stimulus3');
 
     const stimulusContainer = document.getElementById('stimulus-container');
     stimulusContainer.appendChild(stimulus);
 
-    await sleep(30000);
+    await sleep(60000);
     return stimulus.id;
 }
 
-async function displayStimulus4() {
-    console.log('displaying stimulus 4...');
-    const stimulus = createStimulus('stimulus4');
+function createMovingStimulus(id) {
+    const stimulus = document.createElement('video');
 
-    const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus)
-    
-    await sleep(30000);
-    return stimulus.id;
+    stimulus.className = 'stimulus';
+    stimulus.id = id;
+
+    stimulus.autoplay = true;
+    const videoSource = document.createElement('source');
+
+    switch (id) {
+        case 'stimulus1':
+            videoSource.src = '../assets/v3_stimulus1.ogg';
+            videoSource.type = 'video/ogg';
+            break;
+        case 'stimulus2':
+            videoSource.src = '../assets/v3_stimulus2.ogg';
+            videoSource.type = 'video/ogg';
+            break;
+        default:
+            console.log('Invalid id passed to createMovingStimulus()');
+            break;
+        
+    }
+    stimulus.appendChild(videoSource);
+
+    return stimulus;
 }
 
-async function displayStimulus5() {
-    console.log('displaying stimulus 5...');
-    const stimulus = createStimulus('stimulus5');
-
-    stimulus.addEventListener('animationend', () => {
-        const intervalNum = +stimulus.className.substring(17);
-        stimulus.className = 'stimulus interval' + (intervalNum + 1)
-    })
-
-    const stimulusContainer = document.getElementById('stimulus-container');
-    stimulusContainer.appendChild(stimulus);
-
-    stimulus.className += ' interval1';
-    
-    await sleep(30000);
-    return stimulus.id;
-}
-
-function createStimulus(id) {
+function createStaticStimulus(id) {
     const stimulus = document.createElement('img');
 
     stimulus.className = 'stimulus';
     stimulus.id = id;
-    if (id === 'stimulus4' || id === 'stimulus5')
-        stimulus.src = '../assets/stimulus.svg';
-    else
-        stimulus.src = '../assets/wheel.svg';
+    stimulus.src = '../assets/v3_stimulus3.png';
 
     return stimulus;
 }
