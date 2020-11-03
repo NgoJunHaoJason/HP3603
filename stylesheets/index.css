@@ -3,23 +3,18 @@
     margin-top: 20px;
 }
 
-#subtitle {
-    text-align: center;
-}
-
 #button-container {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
-#heading {
-    margin-top: 25vh;
+#stimulus-container {
+    height: 400px;
 }
 
-button {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#v3 {
-    margin-top: 25vh;
+.stimulus {
+    height: 400px;
+    display: block;
+    margin: auto;
 }
