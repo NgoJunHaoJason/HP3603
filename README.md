@@ -23,3 +23,4 @@ for an experiment on dizziness
 
 - favicon generator - https://favicon.io/
 - stimuli - https://www.youtube.com/playlist?list=PLpfs6KJBN2ng6oapXx2GWh0rIMapYyUQk
+  - edited for display by Tan Ching Wen
